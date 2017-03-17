@@ -1,10 +1,15 @@
-#include <stdint.h>
+#include <cstdint>
 #include <stdio.h>
-#include <windows.h>
 #include "CompileTime.h"
 
 int main()
 {
-	printf("CompileTime random number is %lu\n",(uint32_t)(CompileTimeRandom(0,UINT32_MAX)));
-	printf("CompileTime random number is %lu\n",(uint32_t)(CompileTimeRandom(0,UINT32_MAX)));
+	constexpr uint32_t random = rValue;
+	constexpr uint64_t random64 = rValue64;
+	
+	uint32_t first = random;
+	uint64_t second = random64;
+
+	printf("%lu\n", first);
+	printf("%llu", second);
 }
