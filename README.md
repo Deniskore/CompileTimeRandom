@@ -1,9 +1,9 @@
-CompileTimeRandom random implementation in C++11 with constexpr
+Compile time random implementation using C++11 with constexpr:+1:
 
-Required:
+![Gif](https://github.com/Deniskore/CompileTimeRandom/blob/master/show.gif)
 
-GCC  >=4.8
+Compiler requirments:
 
-MSVC >=2015
-
-Clang >=3.3
+* GCC  >=4.8
+* MSVC >=2015
+* Clang >=3.3
